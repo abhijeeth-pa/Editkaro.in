@@ -19,7 +19,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     }
 
     // Send form data to Google Sheets (requires setup with Google Apps Script)
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyUSLoKOqBsoccnDg1ElfVuop1mOaopC3EKVK53yxMVmjwP3Xb93LMh8_hwMPZR_a1nEg/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwH7QHFRZ5NPWoJlqR_SDjOLJI2DNT8TCLEJnQ0Tp5lMEcOctO9NPX-BYfRHP1_fFZU/exec';
     fetch(scriptURL, { method: 'POST', body: new FormData(e.target) })
         .then(response => alert('Success!', response))
         .catch(error => alert('Error!', error));
